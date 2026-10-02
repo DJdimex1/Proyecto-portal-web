@@ -1,0 +1,2105 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="No se Union dolls algo asi"
+    >
+
+    <title>UnionDolls</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ==============================
+         HEADER / NAVEGACIÓN
+    ============================== -->
+
+    <header class="header">
+
+        <div class="container header__content">
+
+            <div class="header__placeholder" aria-label="Logo placeholder"></div>
+
+            <nav class="nav" aria-label="Navegación principal">
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">
+                            Productos
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#brands" class="nav__link">
+                            Marcas
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="header__actions">
+
+                <a href="#account-view" class="header__action-link" data-view-target="account-view">
+                    Cuenta
+                </a>
+
+                <button type="button" class="header__cart-button" data-view-target="cart-view" aria-label="Abrir carrito">
+                    <i class="bi bi-cart3"></i>
+                    <span>Carrito</span>
+                    <span id="cart-count" class="header__cart-count">0</span>
+                </button>
+
+            </div>
+
+            <form class="header__search" action="#" method="get" role="search">
+                <label class="header__search-label" for="site-search">
+                    Buscar
+                </label>
+                <input
+                    id="site-search"
+                    type="search"
+                    name="q"
+                    placeholder="Buscar..."
+                    aria-label="Buscar"
+                >
+            </form>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero__stars" aria-hidden="true">
+
+                <svg class="hero-star hero-star--yellow hero-star--1" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z" /></svg>
+                <svg class="hero-star hero-star--pink hero-star--2" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z" /></svg>
+                <svg class="hero-star hero-star--white hero-star--3" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z" /></svg>
+                <svg class="hero-star hero-star--yellow hero-star--4" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z" /></svg>
+                <svg class="hero-star hero-star--white hero-star--5" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z" /></svg>
+                <svg class="hero-star hero-star--pink hero-star--6" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z" /></svg>
+                <svg class="hero-star hero-star--yellow hero-star--7" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z" /></svg>
+                <svg class="hero-star hero-star--white hero-star--8" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z" /></svg>
+
+            </div>
+
+            <div class="container hero__content">
+
+                <div class="hero__text">
+
+                    <p class="hero__label">
+                        
+                    </p>
+
+                    <h1 class="hero__title">
+                        Union
+                        <span class="hero__title-accent">
+                            Dolls
+                        </span>
+                    </h1>
+
+                    <p class="hero__description">
+                        Compra y venta de piezas únicas y ediciones especiales para los amantes del coleccionismo. Descubre figuras y juguetes exclusivos que le darán un valor especial a tu colección.
+                    </p>
+
+                </div>
+
+
+                <div class="hero__visual">
+
+                    <video
+                        id="hero-logo-video"
+                        class="hero-video"
+                        src="logo.mp4"
+                        autoplay
+                        muted
+                        playsinline
+                    ></video>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="products" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        COLECCIÓN
+                    </p>
+
+                    <img
+                        src="EAH.png"
+                        alt="Ever After High"
+                        class="section-heading__image"
+                    >
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <p class="section__description">
+                    Colección de Ever After High
+                </p>
+
+
+                <div class="products">
+
+                    <article class="product-card">
+
+                        <img
+                            src="momo.png"
+                            alt="Lizzie Hearts doll placeholder image"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Ever After High
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Lizzie Hearts
+                            </h3>
+
+                            <p class="product-card__description">
+                                Es la hija de la Reina de Corazones, con cabello negro ondulado, mechones rojos, un moño en forma de corazón y un corazón rojo pintado sobre su ojo izquierdo.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $21.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="EAH 2.jpeg"
+                            alt="Ever After High"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Ever After High
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Sugar Coated
+                            </h3>
+
+                            <p class="product-card__description">
+                                Esta línea especial gira en torno a una clase de repostería en la escuela. Por ello, Cedar viene con un atuendo inspirado en delantales de cocina, detalles de glaseado derretido en sus zapatos altos y un accesorio de repostería para decorar postres.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $30.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="EAH 3.jpg"
+                            alt="Ever After High Cerise Wolf"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Ever After High
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Cerise Wolf
+                            </h3>
+
+                            <p class="product-card__description">
+                                Cerise Wolf es una identidad alternativa de Cerise Hood, la hija de Caperucita Roja. En esta edición especial, Cerise adopta su herencia lobo y se transforma en una versión más feroz y misteriosa de sí misma.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $30.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="lego" class="section section--gray">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        COLECCIÓN
+                    </p>
+
+                    <img
+                        src="LEGO.png"
+                        alt="LEGO"
+                        class="section-heading__image"
+                    >
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <p class="section__description">
+                    Colección de Lego
+                </p>
+
+
+                <div class="products">
+
+                    <article class="product-card">
+
+                        <img
+                            src="L 1.jpeg"
+                            alt="LEGO Jurassic World Fósiles de Dinosaurio: Tyrannosaurus rex"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Lego
+                            </p>
+
+                            <h3 class="product-card__title">
+                                LEGO Jurassic World Fósiles de Dinosaurio: Tyrannosaurus rex
+                            </h3>
+
+                            <p class="product-card__description">
+                                Un modelo a escala 1:12 diseñado especialmente para adultos con 3,145 bloques de construcción.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $40.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="L 2.jpeg"
+                            alt="# Juego de construcción de casa de palacio rosa con luces"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Lego
+                            </p>
+
+                            <h3 class="product-card__title">
+                                # Juego de construcción de casa de palacio rosa con luces
+                            </h3>
+
+                            <p class="product-card__description">
+                                Un set de bloques inspirado en el icónico edificio de la película Coraline con 1349 bloques de construcción.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $60.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="L 3.jpeg"
+                            alt="LEGO Marvel Iron Man Mark 3"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Lego
+                            </p>
+
+                            <h3 class="product-card__title">
+                                LEGO Marvel Iron Man Mark 3
+                            </h3>
+
+                            <p class="product-card__description">
+                                Un set armable y articulado de 1,297 piezas para adultos que incluye una base de exhibición y una minifigura de Iron Man.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $30.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="monster-high" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        COLECCIÓN
+                    </p>
+
+                    <img
+                        src="MH.jpg"
+                        alt="Monster High"
+                        class="section-heading__image"
+                    >
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <p class="section__description">
+                    Colección de Monster High
+                </p>
+
+
+                <div class="products">
+
+                    <article class="product-card">
+
+                        <img
+                            src="2 ever after high.png"
+                            alt="fdfd"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Monster High
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Lagoona Blue
+                            </h3>
+
+                            <p class="product-card__description">
+                                Esta línea rinde homenaje a las películas de terror clásicas en blanco y negro. Por eso, el diseño de la muñeca tiene la piel y la ropa en tonos grises, haciendo resaltar únicamente el icónico color azul agua (aqua) de sus ojos y los mechones de su largo cabello.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $30.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="MH 2.jpeg"
+                            alt="Monster High placeholder item"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Monster High
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Gooliope Jellington
+                            </h3>
+
+                            <p class="product-card__description">
+                                Esta muñeca es icónica porque no mide las 10.5 pulgadas habituales de Monster High; mide unas impresionantes 17 pulgadas (43 cm) de alto, reflejando que su personaje mide más de 4.5 metros en la serie animada.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $40.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="MH 3.jpeg"
+                            alt="Monster High placeholder item"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Monster High
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Du Chic
+                            </h3>
+
+                            <p class="product-card__description">
+                                Honey adopta un rol circense actuando como una marioneta viviente. La muñeca incluye un soporte y unas cuerdas de títere colgantes para recrear este acto en las acrobacias del show.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $40.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="blayblade-x" class="section section--gray">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        COLECCIÓN
+                    </p>
+
+                    <img
+                        src="BX.jpg"
+                        alt="Blayblade X"
+                        class="section-heading__image"
+                    >
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <p class="section__description">
+                    Colección de Blayblade X
+                </p>
+
+
+                <div class="products">
+
+                    <article class="product-card">
+
+                        <img
+                            src="B1.jpg"
+                            alt="Blayblade X item 1"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Blayblade X
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Beyblade x Dragoon Storm
+                            </h3>
+
+                            <p class="product-card__description">
+                                La combinación del giro izquierdo con la punta de goma permite una aceleración extrema y ataques feroces en trayectorias opuestas a los beyblades de giro derechro.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $22.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="B2.jpg"
+                            alt="Blayblade X item 2"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Blayblade X
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Beyblade x Clock Mirage 
+                            </h3>
+
+                            <p class="product-card__description">
+                                Es un Beyblade de tipo resistencia de Takara Tomy, inspirado nostálgicamente en el clásico diseño de Basalt Horogium de la saga Metal Fight.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $59.90
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="B3.png"
+                            alt="Blayblade X item 3"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Blayblade X
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Beyblade x Hells Reaper
+                            </h3>
+
+                            <p class="product-card__description">
+                                Utiliza el sistema innovador donde la cuchilla se divide en tres partes: el lock chip (chip de bloqueo que da nombre y sujeta la estructura), la Mainblade Reaper (hoja metálica principal con cuatro puntos de contacto para desgaste) y la Assist Blade (hoja auxiliar intercambiable o giratoria para alternar modos de ataque y defensa).
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $17.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="barbie" class="section section--gray">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        COLECCIÓN
+                    </p>
+
+                    <img
+                        src="B.png"
+                        alt="Barbie"
+                        class="section-heading__image"
+                    >
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <p class="section__description">
+                    Colección de Barbie
+                </p>
+
+
+                <div class="products">
+
+                    <article class="product-card">
+
+                        <img
+                            src="BA.png"
+                            alt="Barbie item 1"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Barbie
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Barbie x Yoon Ahn
+                            </h3>
+
+                            <p class="product-card__description">
+                                Diseñada en colaboración con Yoon Ahn de AMBUSH, esta pieza de la línea Barbie Signature explora una estética futurista, cyberpunk y de alta tecnología inspirada en el anime y el streetwear.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $100.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="BA2.png"
+                            alt="Barbie item 2"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Barbie
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Barbie in the Nutcracker 25th Anniversary Doll.
+                            </h3>
+
+                            <p class="product-card__description">
+                                Basada en el icónico papel de Barbie como la Princesa de Azúcar (Sugar Plum Princess) / Clara.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $59.90
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="B3.png"
+                            alt="Barbie item 3"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Barbie
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Barbie signature 2026 holiday 
+                            </h3>
+
+                            <p class="product-card__description">
+                                Un elegante diseño festivo en color rojo intenso, sin tirantes (escote tipo palabra de honor o en corazón), con una falda amplia y voluminosa y un llamativo detalle de lazo grande en la cintura o la cadera.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $45.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="transformers" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        COLECCIÓN
+                    </p>
+
+                    <img
+                        src="T.png"
+                        alt="Transformers"
+                        class="section-heading__image"
+                    >
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <p class="section__description">
+                    Colección de Transformers
+                </p>
+
+
+                <div class="products">
+
+                    <article class="product-card">
+
+                        <img
+                            src="T1.jpg"
+                            alt="Transformers item 1"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Transformers
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Unite Warriors Computron
+                            </h3>
+
+                            <p class="product-card__description">
+                                es un conjunto de colección que incluye a los cinco Technobots para formar al poderoso guerrero combinado Computron.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $90.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo         
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="T2.jpg"
+                            alt="Transformers item 2"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Transformers
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Slipstream takara legends
+                            </h3>
+
+                            <p class="product-card__description">
+                                Takara Tomy Transformers Legends LG-16 Slipstream es una edición de colección de clase Deluxe lanzada en octubre de 2015, basada en el molde de Windblade pero con un esquema de colores y pintura metálica más fieles a la estética de animación japonesa.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $90.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo         
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="product-card">
+
+                        <img
+                            src="T3.jpg"
+                            alt="Transformers item 3"
+                            class="product-card__image"
+                        >
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__brand">
+                                Transformers
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Nightbird takara legends
+                            </h3>
+
+                            <p class="product-card__description">
+                                Es una versión rediseñada y mejorada (redeco) del molde de Generations Arcee. Cuenta con esquemas de color más precisos inspirados en la animación y el cómic, pintura metalizada y marcas especiales "LG" de Takara.
+                            </p>
+
+                            <div class="product-card__bottom">
+
+                                <span class="product-card__price">
+                                    $60.00
+                                </span>
+
+                                <a href="#" class="product-card__link">
+                                    Ver artículo         
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="brands" class="section section--gray">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        CUADRÍCULA DE MARCAS
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        Marcas
+                    </h2>
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <div class="brands">
+
+                    <a href="#lego" class="brand-card" aria-label="LEGO">
+                        <img
+                            src="LEGO.png"
+                            alt="LEGO"
+                            class="brand-card__image"
+                        >
+                    </a>
+
+                    <a href="#monster-high" class="brand-card" aria-label="Monster High">
+                        <img
+                            src="MH.jpg"
+                            alt="Monster High"
+                            class="brand-card__image"
+                        >
+                    </a>
+
+                    <a href="#products" class="brand-card" aria-label="Ever After High">
+                        <img
+                            src="EAH.png"
+                            alt="Ever After High"
+                            class="brand-card__image"
+                        >
+                    </a>
+
+                    <a href="#blayblade-x" class="brand-card" aria-label="Blayblade X">
+                        <img
+                            src="BX.jpg"
+                            alt="Blayblade X"
+                            class="brand-card__image"
+                        >
+                    </a>
+
+                    <a href="#barbie" class="brand-card" aria-label="Barbie">
+                        <img
+                            src="B.png"
+                            alt="Barbie"
+                            class="brand-card__image"
+                        >
+                    </a>
+
+                    <a href="#transformers" class="brand-card" aria-label="Transformers">
+                        <img
+                            src="T.png"
+                            alt="Transformers"
+                            class="brand-card__image"
+                        >
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="account-view" class="section account-view">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        CUENTA
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        Mi cuenta
+                    </h2>
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <div class="account__content">
+
+                    <div class="account__card account__card--preview">
+
+                        <div class="account__image-wrap">
+                            <img
+                                id="account-preview-image"
+                                src="logo.png"
+                                alt="Foto de perfil"
+                                class="account__image"
+                            >
+                        </div>
+
+                        <div class="account__summary">
+                            <h3 id="account-summary-name">Tu cuenta</h3>
+                            <p id="account-summary-email">Aún no has guardado tus datos.</p>
+                        </div>
+
+                    </div>
+
+                    <form id="account-form" class="account__form">
+
+                        <div class="customer-service__field">
+                            <label for="account-image">Foto de perfil</label>
+                            <input
+                                id="account-image"
+                                type="file"
+                                accept="image/*"
+                                class="customer-service__input account__input"
+                            >
+                        </div>
+
+                        <div class="customer-service__field">
+                            <label for="account-name">Nombre</label>
+                            <input
+                                id="account-name"
+                                type="text"
+                                name="name"
+                                placeholder="Tu nombre"
+                                class="customer-service__input account__input"
+                            >
+                        </div>
+
+                        <div class="customer-service__field">
+                            <label for="account-email">Gmail</label>
+                            <input
+                                id="account-email"
+                                type="email"
+                                name="email"
+                                placeholder="tuemail@gmail.com"
+                                class="customer-service__input account__input"
+                            >
+                        </div>
+
+                        <button type="submit" class="button button--primary">
+                            Guardar cuenta
+                        </button>
+
+                        <button type="button" id="reset-account" class="button button--secondary">
+                            Reiniciar cuenta
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <p id="account-message" class="customer-service__message" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+
+        <section id="cart-view" class="section cart-view">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        CARRITO
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        Carrito de compras
+                    </h2>
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <div class="cart">
+
+                    <div class="cart__header">
+                        <h3>Productos agregados</h3>
+                        <button type="button" id="clear-cart" class="button button--secondary">
+                            Vaciar carrito
+                        </button>
+                    </div>
+
+                    <div id="cart-items" class="cart__items">
+                        <p class="cart__empty">Tu carrito está vacío.</p>
+                    </div>
+
+                    <div class="cart__summary">
+                        <span>Total</span>
+                        <strong id="cart-total">$0.00</strong>
+                        <button type="button" id="cart-checkout" class="button button--primary" disabled>
+                            Comprar ahora
+                        </button>
+                    </div>
+
+                    <p id="cart-checkout-message" class="cart__checkout-message" aria-live="polite"></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="chat-view" class="section chat-view">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        CHAT
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        Chat
+                    </h2>
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <div class="chat__layout">
+
+                    <aside class="chat__sidebar">
+                        <h3>Usuarios</h3>
+                        <button type="button" id="reset-chats" class="button button--secondary chat__reset">
+                            Reiniciar chats
+                        </button>
+                        <div id="chat-user-list" class="chat__user-list"></div>
+                    </aside>
+
+                    <div class="chat__panel">
+
+                        <div id="chat-header" class="chat__header">
+                            Selecciona un usuario
+                        </div>
+
+                        <div id="chat-messages" class="chat__messages">
+                            <p class="chat__placeholder">Este chat es de demostración: los usuarios no responden.</p>
+                        </div>
+
+                        <form id="chat-form" class="chat__compose">
+                            <input
+                                id="chat-input"
+                                type="text"
+                                placeholder="Escribe un mensaje..."
+                                class="chat__input"
+                            >
+                            <button type="submit" class="button button--primary">
+                                Enviar
+                            </button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="product-detail-view" class="section product-detail-view">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        PRODUCTO
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        Detalle del producto
+                    </h2>
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <div class="product-detail">
+
+                    <button type="button" class="button button--secondary product-detail__back">
+                        Volver al inicio
+                    </button>
+
+                    <div class="product-detail__content">
+
+                        <div class="product-detail__media">
+                            <img
+                                id="product-detail-image"
+                                src="logo.png"
+                                alt="Producto"
+                                class="product-detail__image"
+                            >
+                        </div>
+
+                        <div class="product-detail__info">
+                            <p id="product-detail-brand" class="product-detail__brand"></p>
+                            <h3 id="product-detail-title" class="product-detail__title"></h3>
+                            <p id="product-detail-description" class="product-detail__description"></p>
+
+                            <div class="product-detail__bottom">
+                                <span id="product-detail-price" class="product-detail__price"></span>
+                                <button type="button" id="product-detail-add-cart" class="button button--primary">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="customer-service-view" class="section customer-service-view">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        SERVICIO
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        Servicio al cliente
+                    </h2>
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <div class="customer-service">
+
+                    <button type="button" class="button button--secondary customer-service__back">
+                        Volver al inicio
+                    </button>
+
+                    <form id="customer-service-form" class="customer-service__form" action="#" method="post">
+
+                        <div class="customer-service__field">
+                            <label for="customer-email">Gmail</label>
+                            <input
+                                id="customer-email"
+                                type="email"
+                                name="email"
+                                placeholder="tuemail@gmail.com"
+                                class="customer-service__input"
+                            >
+                        </div>
+
+                        <div class="customer-service__field">
+                            <label for="customer-password">Contraseña</label>
+                            <input
+                                id="customer-password"
+                                type="password"
+                                name="password"
+                                placeholder="Tu contraseña"
+                                class="customer-service__input"
+                            >
+                        </div>
+
+                        <div class="customer-service__field">
+                            <label for="customer-complaint">Queja</label>
+                            <textarea
+                                id="customer-complaint"
+                                name="complaint"
+                                rows="5"
+                                placeholder="Escribe tu queja..."
+                                class="customer-service__textarea"
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="button button--primary customer-service__submit">
+                            Enviar queja
+                        </button>
+
+                    </form>
+
+                    <p id="customer-service-message" class="customer-service__message" aria-live="polite"></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="reviews" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__label">
+                        OPINIONES
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        Opiniones
+                    </h2>
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+
+                <form id="review-form" class="review-form">
+
+                    <div class="review-form__field">
+                        <label for="review-text">Tu opinión</label>
+                        <textarea
+                            id="review-text"
+                            name="review"
+                            rows="4"
+                            placeholder="Escribe tu opinión..."
+                            class="review-form__textarea"
+                        ></textarea>
+                    </div>
+
+                    <div class="review-form__field">
+                        <label>Estrellas</label>
+                        <div class="review-form__stars" role="radiogroup" aria-label="Calificación">
+                            <button type="button" class="review-star" data-value="1" aria-label="1 estrella">★</button>
+                            <button type="button" class="review-star" data-value="2" aria-label="2 estrellas">★</button>
+                            <button type="button" class="review-star" data-value="3" aria-label="3 estrellas">★</button>
+                            <button type="button" class="review-star" data-value="4" aria-label="4 estrellas">★</button>
+                            <button type="button" class="review-star" data-value="5" aria-label="5 estrellas">★</button>
+                        </div>
+                    </div>
+
+                    <div class="review-form__actions">
+                        <button type="submit" class="button button--primary review-form__submit">
+                            Enviar opinión
+                        </button>
+                        <p id="review-form-message" class="review-form__message">
+                            Puedes enviar hasta 2 opiniones.
+                        </p>
+                    </div>
+
+                </form>
+
+                <div id="reviews-list" class="reviews" aria-live="polite"></div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer class="page-footer">
+
+        <div class="container page-footer__content">
+
+            <a href="#customer-service-view" class="page-footer__link" data-view-target="customer-service-view">
+                Servicio al cliente
+            </a>
+
+            <a href="#chat-view" class="page-footer__link page-footer__link--chat" data-view-target="chat-view">
+                Chat
+            </a>
+
+        </div>
+
+    </footer>
+
+    <script>
+        const allModeClasses = ['customer-service-mode', 'account-mode', 'cart-mode', 'chat-mode', 'product-detail-mode'];
+        const serviceForm = document.getElementById('customer-service-form');
+        const serviceMessage = document.getElementById('customer-service-message');
+        const backHomeButton = document.querySelector('.customer-service__back');
+        const accountForm = document.getElementById('account-form');
+        const accountImageInput = document.getElementById('account-image');
+        const accountPreviewImage = document.getElementById('account-preview-image');
+        const accountSummaryName = document.getElementById('account-summary-name');
+        const accountSummaryEmail = document.getElementById('account-summary-email');
+        const accountMessage = document.getElementById('account-message');
+        const resetAccountButton = document.getElementById('reset-account');
+        const cartCountElement = document.getElementById('cart-count');
+        const cartItemsElement = document.getElementById('cart-items');
+        const cartTotalElement = document.getElementById('cart-total');
+        const clearCartButton = document.getElementById('clear-cart');
+        const cartCheckoutButton = document.getElementById('cart-checkout');
+        const cartCheckoutMessage = document.getElementById('cart-checkout-message');
+        const chatUserList = document.getElementById('chat-user-list');
+        const chatMessagesElement = document.getElementById('chat-messages');
+        const chatHeaderElement = document.getElementById('chat-header');
+        const chatForm = document.getElementById('chat-form');
+        const chatInput = document.getElementById('chat-input');
+        const resetChatsButton = document.getElementById('reset-chats');
+        const reviewForm = document.getElementById('review-form');
+        const reviewText = document.getElementById('review-text');
+        const reviewStars = Array.from(document.querySelectorAll('.review-star'));
+        const reviewFormMessage = document.getElementById('review-form-message');
+        const reviewSubmitButton = document.querySelector('.review-form__submit');
+        const reviewsList = document.getElementById('reviews-list');
+        const productDetailView = document.getElementById('product-detail-view');
+        const productDetailImage = document.getElementById('product-detail-image');
+        const productDetailBrand = document.getElementById('product-detail-brand');
+        const productDetailTitle = document.getElementById('product-detail-title');
+        const productDetailDescription = document.getElementById('product-detail-description');
+        const productDetailPrice = document.getElementById('product-detail-price');
+        const productDetailAddCartButton = document.getElementById('product-detail-add-cart');
+        const productDetailBackButton = document.querySelector('.product-detail__back');
+
+        const viewModeMap = {
+            'customer-service-view': 'customer-service-mode',
+            'account-view': 'account-mode',
+            'cart-view': 'cart-mode',
+            'chat-view': 'chat-mode'
+        };
+
+        function clearModes() {
+            allModeClasses.forEach(function (modeClass) {
+                document.body.classList.remove(modeClass);
+            });
+        }
+
+        function activateView(viewId) {
+            clearModes();
+            const modeClass = viewModeMap[viewId];
+
+            if (modeClass) {
+                document.body.classList.add(modeClass);
+            }
+
+            const targetSection = document.getElementById(viewId);
+            targetSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function goHome() {
+            clearModes();
+            serviceMessage?.classList.remove('is-visible');
+            serviceMessage && (serviceMessage.textContent = '');
+            accountMessage?.classList.remove('is-visible');
+            accountMessage && (accountMessage.textContent = '');
+            document.getElementById('home')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        const heroLogoVideo = document.getElementById('hero-logo-video');
+
+        heroLogoVideo?.addEventListener('ended', function () {
+            this.pause();
+            this.currentTime = this.duration || 0;
+        });
+
+        document.querySelectorAll('[data-view-target]').forEach(function (element) {
+            element.addEventListener('click', function (event) {
+                event.preventDefault();
+                activateView(this.dataset.viewTarget);
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                if (!this.dataset.viewTarget) {
+                    clearModes();
+                }
+            });
+        });
+
+        backHomeButton?.addEventListener('click', goHome);
+        productDetailBackButton?.addEventListener('click', goHome);
+
+        serviceForm?.addEventListener('submit', function (event) {
+            event.preventDefault();
+            serviceMessage.textContent = 'Se a enviado a UnionDolls@gmail.com';
+            serviceMessage.classList.add('is-visible');
+            serviceForm.reset();
+        });
+
+        const accountStorageKey = 'uniondolls-account';
+
+        function renderAccountSummary(savedAccount) {
+            if (savedAccount && savedAccount.name) {
+                accountSummaryName.textContent = savedAccount.name;
+            } else {
+                accountSummaryName.textContent = 'Tu cuenta';
+            }
+
+            if (savedAccount && savedAccount.email) {
+                accountSummaryEmail.textContent = savedAccount.email;
+            } else {
+                accountSummaryEmail.textContent = 'Aún no has guardado tus datos.';
+            }
+
+            if (savedAccount && savedAccount.image) {
+                accountPreviewImage.src = savedAccount.image;
+            } else {
+                accountPreviewImage.src = 'logo.png';
+            }
+        }
+
+        function loadSavedAccount() {
+            const savedAccount = JSON.parse(localStorage.getItem(accountStorageKey) || 'null');
+            renderAccountSummary(savedAccount);
+
+            if (savedAccount) {
+                document.getElementById('account-name').value = savedAccount.name || '';
+                document.getElementById('account-email').value = savedAccount.email || '';
+            }
+        }
+
+        let selectedAccountImage = '';
+
+        accountImageInput?.addEventListener('change', function (event) {
+            const file = event.target.files[0];
+
+            if (!file) {
+                return;
+            }
+
+            const reader = new FileReader();
+
+            reader.onload = function () {
+                selectedAccountImage = reader.result;
+                accountPreviewImage.src = selectedAccountImage;
+            };
+
+            reader.readAsDataURL(file);
+        });
+
+        accountForm?.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('account-name').value.trim();
+            const email = document.getElementById('account-email').value.trim();
+            const savedAccount = JSON.parse(localStorage.getItem(accountStorageKey) || 'null') || {};
+            const nextAccount = {
+                name: name || savedAccount.name || 'Tu cuenta',
+                email: email || savedAccount.email || '',
+                image: selectedAccountImage || savedAccount.image || 'logo.png'
+            };
+
+            localStorage.setItem(accountStorageKey, JSON.stringify(nextAccount));
+            renderAccountSummary(nextAccount);
+            accountMessage.textContent = 'Cuenta guardada correctamente.';
+            accountMessage.classList.add('is-visible');
+            accountForm.reset();
+            accountImageInput.value = '';
+            selectedAccountImage = '';
+        });
+
+        resetAccountButton?.addEventListener('click', function () {
+            localStorage.removeItem(accountStorageKey);
+            accountForm.reset();
+            accountImageInput.value = '';
+            selectedAccountImage = '';
+            renderAccountSummary(null);
+            accountMessage.textContent = 'Cuenta reiniciada.';
+            accountMessage.classList.add('is-visible');
+        });
+
+        const cartStorageKey = 'uniondolls-cart';
+
+        function parsePrice(value) {
+            const numericValue = Number(String(value).replace(/[^0-9.]/g, ''));
+            return Number.isFinite(numericValue) ? numericValue : 0;
+        }
+
+        function renderCart() {
+            const savedCart = JSON.parse(localStorage.getItem(cartStorageKey) || '[]');
+            const total = savedCart.reduce(function (sum, item) {
+                return sum + item.price * item.quantity;
+            }, 0);
+            const totalItems = savedCart.reduce(function (sum, item) {
+                return sum + item.quantity;
+            }, 0);
+
+            cartCountElement.textContent = String(totalItems);
+            cartTotalElement.textContent = '$' + total.toFixed(2);
+            cartCheckoutButton.disabled = !savedCart.length;
+
+            if (!savedCart.length) {
+                cartItemsElement.innerHTML = '<p class="cart__empty">Tu carrito está vacío.</p>';
+                return;
+            }
+
+            cartItemsElement.innerHTML = savedCart.map(function (item, index) {
+                return `
+                    <div class="cart__item">
+                        <div class="cart__item-main">
+                            <img src="${item.image}" alt="${item.title}" class="cart__item-image">
+                            <div class="cart__item-info">
+                                <h4>${item.title}</h4>
+                                <p>$${item.price.toFixed(2)} x ${item.quantity}</p>
+                            </div>
+                        </div>
+                        <button type="button" class="cart__item-remove" data-remove-index="${index}">
+                            Quitar
+                        </button>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function addToCart(product) {
+            const savedCart = JSON.parse(localStorage.getItem(cartStorageKey) || '[]');
+            const existingItem = savedCart.find(function (item) {
+                return item.title === product.title;
+            });
+
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                savedCart.push({
+                    title: product.title,
+                    price: product.price,
+                    image: product.image,
+                    quantity: 1
+                });
+            }
+
+            localStorage.setItem(cartStorageKey, JSON.stringify(savedCart));
+            renderCart();
+        }
+
+        document.querySelectorAll('.product-card').forEach(function (card) {
+            const bottom = card.querySelector('.product-card__bottom');
+            if (!bottom || bottom.querySelector('.product-card__add-cart')) {
+                return;
+            }
+
+            const addButton = document.createElement('button');
+            const title = card.querySelector('.product-card__title')?.textContent.trim() || 'Producto';
+            const priceText = card.querySelector('.product-card__price')?.textContent.trim() || '$0.00';
+            const image = card.querySelector('.product-card__image')?.src || 'logo.png';
+            addButton.type = 'button';
+            addButton.className = 'product-card__add-cart';
+            addButton.textContent = 'Agregar al carrito';
+            addButton.dataset.title = title;
+            addButton.dataset.price = parsePrice(priceText).toFixed(2);
+            addButton.dataset.image = image;
+            addButton.addEventListener('click', function () {
+                addToCart({
+                    title: title,
+                    price: parsePrice(priceText),
+                    image: image
+                });
+            });
+
+            bottom.appendChild(addButton);
+
+            const viewLink = card.querySelector('.product-card__link');
+            if (viewLink) {
+                viewLink.setAttribute('href', '#product-detail-view');
+                viewLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const productBrand = card.querySelector('.product-card__brand')?.textContent.trim() || 'BRAND';
+                    const productDescription = card.querySelector('.product-card__description')?.textContent.trim() || '';
+
+                    productDetailBrand.textContent = productBrand;
+                    productDetailTitle.textContent = title;
+                    productDetailDescription.textContent = productDescription;
+                    productDetailPrice.textContent = priceText;
+                    productDetailImage.src = image;
+                    productDetailImage.alt = title;
+                    productDetailAddCartButton.dataset.productTitle = title;
+                    productDetailAddCartButton.dataset.productPrice = parsePrice(priceText).toFixed(2);
+                    productDetailAddCartButton.dataset.productImage = image;
+
+                    clearModes();
+                    document.body.classList.add('product-detail-mode');
+                    productDetailView?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            }
+        });
+
+        productDetailAddCartButton?.addEventListener('click', function () {
+            addToCart({
+                title: productDetailAddCartButton.dataset.productTitle || 'Producto',
+                price: Number(productDetailAddCartButton.dataset.productPrice || 0),
+                image: productDetailAddCartButton.dataset.productImage || 'logo.png'
+            });
+        });
+
+        cartItemsElement?.addEventListener('click', function (event) {
+            const removeButton = event.target.closest('.cart__item-remove');
+            if (!removeButton) {
+                return;
+            }
+
+            const savedCart = JSON.parse(localStorage.getItem(cartStorageKey) || '[]');
+            const itemIndex = Number(removeButton.dataset.removeIndex);
+            savedCart.splice(itemIndex, 1);
+            localStorage.setItem(cartStorageKey, JSON.stringify(savedCart));
+            renderCart();
+        });
+
+        clearCartButton?.addEventListener('click', function () {
+            localStorage.setItem(cartStorageKey, JSON.stringify([]));
+            cartCheckoutMessage.textContent = '';
+            renderCart();
+        });
+
+        cartCheckoutButton?.addEventListener('click', function () {
+            const savedCart = JSON.parse(localStorage.getItem(cartStorageKey) || '[]');
+
+            if (!savedCart.length) {
+                return;
+            }
+
+            localStorage.setItem(cartStorageKey, JSON.stringify([]));
+            cartCheckoutMessage.textContent = 'Compra realizada.';
+            renderCart();
+        });
+
+        const fakeUsers = [
+            { id: 'ana', name: 'Ana', role: 'Vendedora' },
+            { id: 'leo', name: 'Leo', role: 'Atención al cliente' },
+            { id: 'sofia', name: 'Sofía', role: 'Supervisor' }
+        ];
+        const chatStorageKey = 'uniondolls-chat';
+        let activeChatUser = fakeUsers[0].id;
+
+        function getChatState() {
+            const stored = JSON.parse(localStorage.getItem(chatStorageKey) || '{}');
+            fakeUsers.forEach(function (user) {
+                if (!stored[user.id]) {
+                    stored[user.id] = [
+                        {
+                            sender: 'system',
+                            text: 'Este usuario de la demo no responde automáticamente. Puedes escribir un mensaje y enviarlo.'
+                        }
+                    ];
+                }
+            });
+            localStorage.setItem(chatStorageKey, JSON.stringify(stored));
+            return stored;
+        }
+
+        function renderChatUsers() {
+            const chatState = getChatState();
+            chatUserList.innerHTML = fakeUsers.map(function (user) {
+                const isActive = user.id === activeChatUser;
+                const unreadCount = (chatState[user.id] || []).filter(function (message) {
+                    return message.sender === 'me';
+                }).length;
+
+                return `
+                    <button type="button" class="chat__user ${isActive ? 'is-active' : ''}" data-user-id="${user.id}">
+                        <span class="chat__user-name">${user.name}</span>
+                        <span class="chat__user-role">${user.role}</span>
+                        ${unreadCount ? '<span class="chat__user-badge">' + unreadCount + '</span>' : ''}
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function renderChatMessages() {
+            const chatState = getChatState();
+            const activeUser = fakeUsers.find(function (user) {
+                return user.id === activeChatUser;
+            });
+
+            chatHeaderElement.textContent = activeUser ? `${activeUser.name} • ${activeUser.role}` : 'Selecciona un usuario';
+
+            chatMessagesElement.innerHTML = (chatState[activeChatUser] || []).map(function (message) {
+                const messageClass = message.sender === 'me' ? 'chat__message chat__message--me' : 'chat__message';
+                return `<div class="${messageClass}">${message.text}</div>`;
+            }).join('');
+
+            chatMessagesElement.scrollTop = chatMessagesElement.scrollHeight;
+        }
+
+        chatUserList?.addEventListener('click', function (event) {
+            const userButton = event.target.closest('.chat__user');
+            if (!userButton) {
+                return;
+            }
+
+            activeChatUser = userButton.dataset.userId;
+            renderChatUsers();
+            renderChatMessages();
+        });
+
+        chatForm?.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const messageText = chatInput.value.trim();
+
+            if (!messageText) {
+                return;
+            }
+
+            const chatState = getChatState();
+            chatState[activeChatUser].push({
+                sender: 'me',
+                text: messageText
+            });
+
+            localStorage.setItem(chatStorageKey, JSON.stringify(chatState));
+            chatInput.value = '';
+            renderChatUsers();
+            renderChatMessages();
+        });
+
+        resetChatsButton?.addEventListener('click', function () {
+            localStorage.removeItem(chatStorageKey);
+            activeChatUser = fakeUsers[0].id;
+            renderChatUsers();
+            renderChatMessages();
+        });
+
+        const maxReviewCount = 2;
+        const defaultReviews = [
+            {
+                text: 'Aquí conseguí grandes adiciones a mi colección.',
+                author: 'cliente',
+                stars: 5
+            },
+            {
+                text: 'Vendí muy piezas a buen precio con esta página.',
+                author: 'cliente',
+                stars: 5
+            }
+        ];
+        let selectedReviewRating = 0;
+        let sessionReviews = [];
+
+        function getStarsMarkup(stars) {
+            return '★'.repeat(stars) + '☆'.repeat(5 - stars);
+        }
+
+        function updateReviewFormState() {
+            const isLimitReached = sessionReviews.length >= maxReviewCount;
+
+            reviewSubmitButton.disabled = isLimitReached;
+            reviewFormMessage.textContent = isLimitReached
+                ? 'Límite alcanzado: solo puedes enviar 2 opiniones adicionales durante esta sesión.'
+                : 'Puedes enviar hasta 2 opiniones adicionales durante esta sesión.';
+        }
+
+        function renderReviews() {
+            const reviews = defaultReviews.concat(sessionReviews);
+
+            reviewsList.innerHTML = reviews.map(function (review) {
+                return `
+                    <article class="review-card">
+
+                        <div class="review-card__stars" aria-label="${review.stars} estrellas">
+                            ${getStarsMarkup(review.stars)}
+                        </div>
+
+                        <p class="review-card__text">
+                            “${review.text}”
+                        </p>
+
+                        <p class="review-card__author">
+                            — ${review.author}
+                        </p>
+
+                    </article>
+                `;
+            }).join('');
+
+            updateReviewFormState();
+        }
+
+        reviewStars.forEach(function (starButton) {
+            starButton.addEventListener('click', function () {
+                selectedReviewRating = Number(starButton.dataset.value);
+
+                reviewStars.forEach(function (button) {
+                    button.classList.toggle('is-active', Number(button.dataset.value) <= selectedReviewRating);
+                });
+            });
+        });
+
+        reviewForm?.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const inputText = reviewText.value.trim();
+
+            if (!inputText) {
+                reviewFormMessage.textContent = 'Escribe tu opinión antes de enviar.';
+                return;
+            }
+
+            if (!selectedReviewRating) {
+                reviewFormMessage.textContent = 'Selecciona una calificación con estrellas.';
+                return;
+            }
+
+            if (sessionReviews.length >= maxReviewCount) {
+                updateReviewFormState();
+                return;
+            }
+
+            const newReview = {
+                text: inputText,
+                author: 'tú',
+                stars: selectedReviewRating
+            };
+
+            sessionReviews.push(newReview);
+            reviewForm.reset();
+            selectedReviewRating = 0;
+            reviewStars.forEach(function (starButton) {
+                starButton.classList.remove('is-active');
+            });
+            renderReviews();
+            reviewFormMessage.textContent = 'Opinión enviada correctamente. Se mostrará solo mientras la página esté abierta.';
+        });
+
+        loadSavedAccount();
+        renderCart();
+        renderChatUsers();
+        renderChatMessages();
+        renderReviews();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
